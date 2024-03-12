@@ -1,0 +1,157 @@
+/* Add this to your existing styles.css file */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('/land/Images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+h3{
+    font-weight: bold;
+    font-size: large;
+    color: rgb(207, 54, 228);
+    margin-left: 1cm;
+}
+
+footer
+{
+    margin-top: 12cm;
+  text-align: center;
+  color: white;
+}
+
+.navbar {
+    background-color:transparent;
+    color: white;
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    margin-right: 10px;
+}
+
+.link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.link li {
+    margin-right: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+ /* li a:hover
+{
+    background-color: rgb(207, 54, 228);
+    
+} */
+a {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+.thumb-container { 
+    width: 300px; 
+    height: 180px; 
+    overflow: hidden; 
+    padding: 5px; 
+    border: 1px solid #e1e1e1; 
+    border-radius: 8px; 
+    margin: 20px; 
+} 
+
+.thumb-image { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 5px; 
+} 
+
+.thumb-image:hover { 
+    scale: 1.02; 
+    cursor: pointer; 
+} 
+
+.thumb-container:hover { 
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); 
+} 
+.new
+{
+    text-align: center;
+    margin-left: 11cm;
+    margin-top: -4cm;
+    background-color: black;
+    width: 110vh;
+    height: 40vh;
+    border-radius: 25px;
+}
+p{
+    color:white ;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link {
+        margin-top: 15px;
+    }
+
+    .link li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
